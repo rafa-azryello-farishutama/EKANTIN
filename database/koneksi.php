@@ -3,12 +3,17 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$database_name = "ekantin";
 
-$db = mysqli_connect($hostname,$username,$password,$database_name);
+$db_ekantin = mysqli_connect($hostname,$username,$password,"ekantin");
+$db_sekolah = mysqli_connect($hostname,$username,$password,"sekolah");
 
-if($db->connect_error){
-    echo "Koneksi rusak";
+if($db_ekantin->connect_error){
+    echo "Koneksi ke database Kantin rusak";
+    die("error!");
+}
+
+if($db_sekolah->connect_error){
+    echo "Koneksi ke database sekolah rusak";
     die("error!");
 }
 ?>

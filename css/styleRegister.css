@@ -1,0 +1,133 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url('../img/mayers.png');
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    font-family:sans-serif;
+}
+
+.containerUtama{
+    display:flex;
+}
+
+.kotakLogin2{
+    border:2px solid #333;
+    width:300px;
+    height:500px;
+    border-radius:10px;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding: 0px;
+}
+
+.header{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.fotoLogo{
+    width:200px;
+}
+
+.jarakKotak2{
+    flex:1;
+    overflow-y:auto;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.jarakKotak2::-webkit-scrollbar{
+    width:6px;
+}
+.jarakKotak2::-webkit-scrollbar-thumb{
+    background:#bbb;
+    border-radius:10px;
+}
+
+.kotakRadio{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    font-size:14px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.kotakInput1,
+.kotakInput2,
+.kotakInput3,
+.kotakInput4{
+    width:250px;
+    padding:10px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+.kotakInput1{
+    margin-left: 9px;
+}
+
+.kotakInput1:focus,
+.kotakInput2:focus,
+.kotakInput3:focus,
+.kotakInput4:focus{
+    outline:none;
+    border-color:#666;
+}
+
+.tulisan1 p,
+.tulisan2 p,
+.tulisan3 p,
+.tulisan4 p{
+    margin:3px 0 0;
+    width:250px;
+    font-size:13px;
+    color:#444;
+}
+
+.kotakBawah{
+    border-top:1px solid #ddd;
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:white;
+}
+
+.tombolSubmit{
+    background:greenyellow;
+    border:none;
+    width:120px;
+    height:35px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tombolSubmit:hover{
+    background:#7CFC00;
+}
+
+.kotakTulisan{
+    margin-top:6px;
+    font-size:14px;
+}
+
+.kotakTulisan a{
+    text-decoration:none;
+    color:#333;
+}
