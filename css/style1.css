@@ -1,98 +1,117 @@
 body{
-    display: flex;
-    justify-content: center;
-    background-color: aliceblue;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../img/mayers.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url('../img/mayers.png');
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    font-family:sans-serif;
 }
 
-.kotakLogin{
-    border: 2px solid #333;
-    width: 300px;
-    height: 500px;
-    border-radius: 8px;
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.containerUtama{
+    display:flex;
 }
 
-.logo{
-    display: block;
-    border-radius: 50%;
-    width: 180px;
-    height: auto;
-    margin: 0 auto 15px;
+.kotakLogin2{
+    border:2px solid #333;
+    width:300px;
+    height:500px;
+    border-radius:10px;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding: 0px;
 }
 
-.kotakInput1{
-    width: 250px;                
-    padding: 10px;            
-    border: 2px solid #ccc;     
-    border-radius: 8px;        
-    box-sizing: border-box;
+.header{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
 }
 
-.tulisan1 p{
-    margin: 3px 170px 0 0;
-    text-align: left;
+.fotoLogo{
+    width:200px;
 }
 
-.kotak2{
-    margin: 25px 0 0 0;
-    border: none;
+.jarakKotak2{
+    flex:1;
+    overflow-y:auto;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
 }
 
-.kotakInput2{
-    width: 250px;
-    padding: 10PX;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
+.jarakKotak2::-webkit-scrollbar{
+    width:6px;
+}
+.jarakKotak2::-webkit-scrollbar-thumb{
+    background:#bbb;
+    border-radius:10px;
 }
 
-.tulisan2 p{
-    margin: 3px 170px 0 0;
-    text-align: left;
+.input-group{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-.kotakbutton{
-    margin: 35px 0 0 0;
-    display: flex;
-    justify-content: center;
+.kotakInput3,
+.kotakInput4{
+    width:250px;
+    padding:10px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
 }
 
-button[type="submit"]{
-    border-radius: 8px;
-    border: none;
-    width: 100px; height: 30px;
-    background-color: green;
-    color: white;
+.kotakInput3:focus,
+.kotakInput4:focus{
+    outline:none;
+    border-color:#666;
 }
 
-.jarakTulisan{
-    margin: 60px 0 0 0;
-    display: flex;
-    justify-content: flex-end;
+.tulisan3 p,
+.tulisan4 p{
+    margin:3px 0 0;
+    width:250px;
+    font-size:13px;
+    color:#444;
 }
 
-.tulisanAkun{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    font-size: 13px;
+.kotakBawah{
+    border-top:1px solid #ddd;
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:white;
 }
 
-.error{
-    border: 2px solid red !important;
+.tombolSubmit{
+    background:greenyellow;
+    border:none;
+    width:120px;
+    height:35px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-.error1 p{
-    color: red;
+.tombolSubmit:hover{
+    background:#7CFC00;
+}
+
+.kotakTulisan{
+    margin-top:6px;
+    font-size:12px;
+    text-align: center;
+}
+
+.kotakTulisan a{
+    text-decoration:none;
+    color:#333;
 }
