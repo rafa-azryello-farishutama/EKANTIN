@@ -53,12 +53,21 @@ body{
     border-radius:10px;
 }
 
+.kotakRadio{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    font-size:14px;
+}
+
 .input-group{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
+.kotakInput1,
+.kotakInput2,
 .kotakInput3,
 .kotakInput4{
     width:250px;
@@ -68,12 +77,20 @@ body{
     box-sizing:border-box;
 }
 
+.kotakInput1{
+    margin-left: 9px;
+}
+
+.kotakInput1:focus,
+.kotakInput2:focus,
 .kotakInput3:focus,
 .kotakInput4:focus{
     outline:none;
     border-color:#666;
 }
 
+.tulisan1 p,
+.tulisan2 p,
 .tulisan3 p,
 .tulisan4 p{
     margin:3px 0 0;
@@ -107,8 +124,7 @@ body{
 
 .kotakTulisan{
     margin-top:6px;
-    font-size:12px;
-    text-align: center;
+    font-size:14px;
 }
 
 .kotakTulisan a{
